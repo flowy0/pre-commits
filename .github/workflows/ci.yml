@@ -7,8 +7,8 @@ name: CI
 on:
   push:
     branches:
-     -  main
-     - pre_commit_hook
+     - main
+     - add_re_commit_hook
   pull_request:
     branches: [ main ]
 jobs:
