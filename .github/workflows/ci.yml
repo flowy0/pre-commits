@@ -43,12 +43,12 @@ jobs:
       run:
         black --check . --exclude docs/
     - name: Run flake8
-      run: flake8 fizzbuzz.py
+      run: flake8 src
     - name: Run pylint
-      run: pylint fizzbuzz.py
+      run: pylint src
     - name: Run Mypy
-      run: mypy fizzbuzz.py
+      run: mypy src
     - name: Run isort
-      run: isort --profile black fizzbuzz.py
+      run: isort --profile black src
     - name: tests
       run: pytest
