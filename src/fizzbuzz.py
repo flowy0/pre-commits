@@ -15,4 +15,7 @@ def fizz_buzz(number_input: int) -> str:
     elif number_input % 3 == 0:
         output = "fizz"
 
-    return str(output)
+    if output == "":
+        return str(number_input)
+    else:
+        return str(output)
