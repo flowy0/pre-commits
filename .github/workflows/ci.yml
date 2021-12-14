@@ -6,7 +6,9 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches:
+     -  main
+     - pre_commit_hook
   pull_request:
     branches: [ main ]
 jobs:
@@ -48,3 +50,5 @@ jobs:
       run: mypy fizzbuzz.py
     - name: Run isort
       run: isort --profile black fizzbuzz.py
+    - name: tests
+      run: pytest
