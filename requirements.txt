@@ -1,8 +1,8 @@
-pre-commit
-pylint
-black
-isort
-flake8
-pytest
-mypy
-hypothesis
+pre-commit==2.16.0
+pylint=2.12.2
+black=22.1.0
+isort=5.93
+flake8=4.0.1
+pytest=6.2.5
+mypy=0.920
+hypothesis=6.30.1
